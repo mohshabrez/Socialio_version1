@@ -35,7 +35,7 @@ export function ProfilePage(){
     },[currentUser.uid])
 
     
-    console.log(usersPost)
+    console.log(usersPost.length)
 
     return(
         <>
@@ -46,13 +46,13 @@ export function ProfilePage(){
                 </div>
                 <div className="profileInfo">
                     <div className="postsCount">
-                        <span><strong>48 Posts </strong></span>
+                        {getData && <span><strong>{usersPost.length} Posts</strong></span>}
                     </div>
                     <div className="followersCount">
-                        <span><strong>438 Followers</strong></span>
+                        {getData && <span><strong>{getData?.data?.followers ? getData?.data?.followers : 0} Followers</strong></span>}
                     </div>
                     <div className="followingCount">
-                        <span><strong>200 Following</strong></span>
+                    {getData && <span><strong>{getData?.data?.following ? getData?.data?.following : 0} Following</strong></span>}
                     </div>
                 </div>
             </div>
