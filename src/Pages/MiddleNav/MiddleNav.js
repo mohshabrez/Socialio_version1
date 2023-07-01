@@ -141,7 +141,7 @@ export function MiddleNav(){
                 )}
                 <div className="postbtnOptions">
                 <div className="postOptions">
-                   <label> <input className="option" style={{display:"none"}}  type="file" id="file" accept=".png,.jpeg,.jpg" onChange={(e) => setImg(e.target.files[0])} /><span class="material-symbols-outlined" style={{color:"var(--photo)", marginTop:"0.5rem"}}>image</span></label>
+                   <label> <input className="option" style={{display:"none"}}  type="file" id="file" accept=".png,.jpeg,.jpg" onChange={(e) => setImg(e.target.files[0])} /><span class="material-symbols-outlined" style={{color:"var(--photo)", marginTop:"0.5rem", cursor:"pointer"}}>image</span></label>
                     <div className="option" style={{color:"var(--video)"}}><span class="material-symbols-outlined">smart_display</span></div>
                     <div className="option" style={{color:"var(--location)"}} onClick={() => setShowEmojis(!showEmojis)}><span class="material-symbols-outlined">add_reaction</span></div>
                     <div className="option" style={{color:"var(--schedule)"}}><span class="material-symbols-outlined">calendar_month</span></div>

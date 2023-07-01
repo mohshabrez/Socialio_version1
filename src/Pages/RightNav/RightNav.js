@@ -16,7 +16,7 @@ export function RightNav(){
         <div className="right">
             <ProfileCard/>
             <div className="followersSection">
-            <h3>Who is following you!!!</h3>
+            <h4>Connect with New people!!!</h4>
             {filterUsers.map((user) => (
                 <FollowersCard key={user.id} user={user} />
                 ))

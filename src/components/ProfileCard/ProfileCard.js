@@ -23,12 +23,12 @@ export function ProfileCard(){
             <hr />
             <div>
                 <div className="follow">
-                    <span>{getData?.data?.following}</span>
+                    <span>{getData?.data?.following ? getData?.data?.following : 0}</span>
                     <span>Followings</span>
                 </div>
                 <div className="vl"></div>
                 <div className="follow">
-                    <span>{getData?.data?.followers}</span>
+                    <span>{getData?.data?.followers ? getData?.data?.followers : 0}</span>
                     <span>Followers</span>
                 </div>
             </div>
